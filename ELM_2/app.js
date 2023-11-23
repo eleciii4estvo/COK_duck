@@ -1,47 +1,47 @@
 const questions = [
     {
-        question: "Какие ингредиенты нужны для приготовления клубнично-лимонного сорбета?" ,
+        question: "Какое масло используется в видео для приготовления заварного теста?" ,
         answers:[
-            {text: 'Лимонный сок, замороженная клубника, сахар, яичный белок', correct: true},
-            {text: 'Лимонный сок, замороженная клубника, сахарная пудра, яичный белок', correct: false},
-            {text: 'Лимонный сок, свежая клубника, сахарная пудра, яичный белок', correct: false},
-            {text: 'Лимонный сок, свежая клубника, сахар, яичный белок', correct: false}
+            {text: 'Сливочное', correct: false},
+            {text: 'Оливковое', correct: false},
+            {text: 'Растительное', correct: true},
+            {text: 'Кукурузное', correct: false}
         ]
     },
     {
-        question: "Какой ингредиент нужно добавить в остывшие клубничное пюре?" ,
+        question: "Какая должна быть температура разогретого Су-вида для приготовления утки?" ,
         answers:[
-            {text: 'Сахар', correct: false},
-            {text: 'Яичный белок', correct: true},
-            {text: 'Лимонный сок', correct: false},
-            {text: 'Сахарную пудру', correct: false}
+            {text: '63,5°', correct: true},
+            {text: '70°', correct: false},
+            {text: '90°', correct: false},
+            {text: '50°', correct: false}
         ]
     },
     {
-        question: "Для приготовления  песочных тарталеток, какой жирностью используется сливочное масло?" ,
+        question: "Какие виды лука используются при приготовление лукового соуса?" ,
         answers:[
-            {text: '80%', correct: false},
-            {text: '61%', correct: false},
-            {text: '82,5%', correct: true},
-            {text: '72,5%', correct: false}
+            {text: 'Белый лук и Красный лук', correct: false},
+            {text: 'Белый лук и Лук-парей', correct: false},
+            {text: 'Красный лук и Лук-парей', correct: false},
+            {text: 'Белый лук, Красный лук и Лук-парей', correct: true}
         ]
     },
     {
-        question: "Какая Мука используется для приготовления песочных тарталеток?" ,
+        question: "Назовите температуру и время выпекания декора из заварного теста?" ,
         answers:[
-            {text: 'Пшеничная, Миндальная', correct: true},
-            {text: 'Пшеничная, Кукурузная', correct: false},
-            {text: 'Ржаная, Миндальная', correct: false},
-            {text: 'Соевая, Миндальная', correct: false}
+            {text: '180°, 7 мин', correct: true},
+            {text: '160°, 15 мин', correct: false},
+            {text: '165°, 10 мин', correct: false},
+            {text: '190°, 5 мин', correct: false}
         ]
     },
     {
-        question: "Какой жирностью используются сливки для приготовление клубничного мусса?" ,
+        question: "Какой ингредиент добавляется при пассерованние лука для его карамелизации?" ,
         answers:[
-            {text: '20%', correct: false},
-            {text: '33%', correct: true},
-            {text: '22%', correct: false},
-            {text: '15%', correct: false}
+            {text: 'Белое вино', correct: false},
+            {text: 'Сливки', correct: false},
+            {text: 'Сахар', correct: true},
+            {text: 'Соль', correct: false}
         ]
     },
 ]
