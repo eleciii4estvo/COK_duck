@@ -131,9 +131,9 @@ main{
     background: #c8e4cc;
     padding: 0 40px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .info_without_popup h2{
@@ -221,3 +221,4 @@ main{
     text-decoration: none;
     color: #fff;
 }
+

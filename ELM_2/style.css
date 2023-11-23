@@ -51,6 +51,8 @@ main{
     justify-content: flex-start;
 }
 
+
+
 .modal{
     position:fixed;
     left: 0;
@@ -142,6 +144,26 @@ main{
     height: 360px;
     background: #49874e;
     margin: 10px 50px;
+}
+
+@media (max-width: 1600px) {
+    .content{
+        justify-content: center;
+    }
+    .frame{
+        margin: 10px;
+    }
+    .video_and_quiz{
+        height: auto;
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
 }
 
 .quiz_wrppaper{
