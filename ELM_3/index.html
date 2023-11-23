@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>ЭОМ 3</title>
+</head>
+<body>
+    <header>
+        <h1>ЦИФРОВОЙ ОБРАЗОВАТЕЛЬНЫЙ КОНТЕНТ</h1>
+    </header>
+    <main>
+        <!-- При добавлении модальных окон использовать следующее правило наименования:
+        id модального окна - "modal_о_чем_окно_popup"
+        А id кнопки на которую вызвается это окно должно быть таким
+        id="id модального окна без приставки _popup" -->
+        <div class="content">
+            <div class="row_with_title">
+                <h1>Проверьте свои знания, пройдя тест из 10 вопросов по изученному материалу</h1>
+            </div>
+            <div class="row_with_back_btn">
+                <button class="back_btn"><a href="../index.html">На главную</a></button>
+            </div>
+            <div class="quiz">
+                <div class="quiz_wrppaper">
+                    <h2 id="question_name">Question name</h2>
+                    <div id="answer_buttons">
+                        <button class="ans_btn">1 Ans</button>
+                        <button class="ans_btn">2 Ans</button>
+                        <button class="ans_btn">3 Ans</button>
+                        <button class="ans_btn">4 Ans</button>  
+                    </div>
+                <button id="next_button">Следующий вопрос</button>
+            </div>
+            
+
+        </div>
+    </main>
+    <footer>
+        <img src="src/to-bar.png" alt="specialitet wide logo">
+    </footer>
+</body>
+</html>
