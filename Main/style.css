@@ -71,6 +71,10 @@ main{
     margin: 0;
 }
 
+.modal_box p{
+    margin: 5px;
+}
+
 .modal.open{
     visibility: visible;
     opacity: 1;
