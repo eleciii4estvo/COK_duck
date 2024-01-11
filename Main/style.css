@@ -71,10 +71,6 @@ main{
     margin: 0;
 }
 
-.modal_box p{
-    margin: 5px;
-}
-
 .modal.open{
     visibility: visible;
     opacity: 1;
@@ -132,7 +128,7 @@ main{
     padding: 0 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -194,7 +190,7 @@ main{
     color:#fff;
     background: #93b398;
     border: none;
-    font-weight: 500;
+
     border-radius: 25px;
     transition: 200ms;
     align-self: center;
@@ -214,6 +210,8 @@ main{
 
 .card_item button:hover{
     transform: scale(1.1);
+    font-weight: 500;
+
     background: #97d2a0;
 }
 
@@ -222,3 +220,38 @@ main{
     color: #fff;
 }
 
+@media (max-width: 1500px){
+    .card_item{
+        width:250px;
+    }
+    .card_item button{
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1080px){
+    .card_item{
+        width:200px;
+    }
+    .card_item button{
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 900px){
+    .card_item{
+        width: 150px;
+        font-size: 14px;
+    }
+    .card_item button{
+        height: 25px;
+        width: 150px;
+    }
+    .redirect_btn{
+        font-size: 5px;
+    }
+}

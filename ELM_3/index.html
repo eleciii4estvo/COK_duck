@@ -16,30 +16,65 @@
         <h1>ЦИФРОВОЙ ОБРАЗОВАТЕЛЬНЫЙ КОНТЕНТ</h1>
     </header>
     <main>
-        <!-- При добавлении модальных окон использовать следующее правило наименования:
-        id модального окна - "modal_о_чем_окно_popup"
-        А id кнопки на которую вызвается это окно должно быть таким
-        id="id модального окна без приставки _popup" -->
         <div class="content">
             <div class="row_with_title">
-                <h1>Проверьте свои знания, пройдя тест из 10 вопросов по изученному материалу</h1>
+                <h1>Проверьте свои знания, сыграя в данную викторину</h1>
             </div>
             <div class="row_with_back_btn">
                 <button class="back_btn"><a href="../index.html">На главную</a></button>
+                <h2 class="score_info"> Ваш счет: 0 баллов</h2>
             </div>
-            <div class="quiz">
-                <div class="quiz_wrppaper">
-                    <h2 id="question_name">Question name</h2>
-                    <div id="answer_buttons">
+            <div class="quiz_cont">
+                <div class="quiz_wrapper quiz_100">
+                    <h2 class="question_label">Легкие вопросы (100 баллов за правильный ответ)</h2>
+                    <h2 class="question_name" id="question_name100">Question name</h2>
+                    <div class="answer_buttons" id="answer_buttons100">
                         <button class="ans_btn">1 Ans</button>
                         <button class="ans_btn">2 Ans</button>
                         <button class="ans_btn">3 Ans</button>
                         <button class="ans_btn">4 Ans</button>  
                     </div>
-                <button id="next_button">Следующий вопрос</button>
-            </div>
-            
+                <button class="next_button" id="next_button100">Следующий вопрос</button>
+                </div>
+                <div class="quiz_wrapper quiz_200">
+                    <h2 class="question_label">Вопросы повышенной сложности (250 баллов за правильный ответ)</h2>
+                    <div class="blocked_content block200">
 
+                    </div>
+                    <div class="quiz_wrapper hiden_content200">
+                        <h2 class="question_name" id="question_name200">Question name</h2>
+                        <div class="answer_buttons" id="answer_buttons200">
+                            <button class="ans_btn">1 Ans</button>
+                            <button class="ans_btn">2 Ans</button>
+                            <button class="ans_btn">3 Ans</button>
+                            <button class="ans_btn">4 Ans</button>  
+                        </div>
+                    <button class="next_button" id="next_button200">Следующий вопрос</button>
+                    </div>
+                </div>
+
+                <div class="quiz_wrapper quiz_300">
+                    <h2 class="question_label">Сложные вопросы (500 баллов за правильный ответ)</h2>
+                    <div class="blocked_content block300">
+
+                    </div>
+                    <div class="quiz_wrapper hiden_content300">
+                        <h2 class="question_name" id="question_name300">Question name</h2>
+                        <div class="answer_buttons" id="answer_buttons300">
+                            <button class="ans_btn">1 Ans</button>
+                            <button class="ans_btn">2 Ans</button>
+                            <button class="ans_btn">3 Ans</button>
+                            <button class="ans_btn">4 Ans</button>  
+                        </div>
+                        <button class="next_button" id="next_button300">Следующий вопрос</button>
+                    </div>
+                </div>
+                
+           
+        </div>
+        <div class="end_quiz">
+            <h2 class="end_score">Вы ответили на все вопросы данного теста и заработали i баллов из 4250 возможных.</h2>
+            <h2 class="end_message">Это хороший результат, так держать!</h2>
         </div>
     </main>
     <footer>

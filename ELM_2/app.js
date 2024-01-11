@@ -44,6 +44,47 @@ const questions = [
             {text: 'Соль', correct: false}
         ]
     },
+    {
+        question: "Какое значение имеет тепловая обработка?" ,
+        answers:[
+            {text: 'Повышает усвояемость пищи, размягчает и обеззараживает продукты, создает новый вкус и аромат', correct: true},
+            {text: 'Обеззараживает продукты', correct: false},
+            {text: 'Меняет консистенцию, создает новый вкус и аромат', correct: false}
+        ]
+    },
+    {
+        question: "Почему Морковь рекомендуется пассеровать в жире?" ,
+        answers:[
+            {text: 'Быстрее размягчается', correct: false},
+            {text: 'Каротин переходит в жир, окрашивая его в оранжевый цвет', correct: true},
+            {text: 'Приобретает новый вкус', correct: false}
+        ]
+    },
+    {
+        question: "В чём главное отличие технологии Су-Вид от традиционных способов?" ,
+        answers:[
+            {text: 'Жестко контролируемое время приготовления', correct: false},
+            {text: 'Жестко контролируемая температура приготовления', correct: true},
+            {text: 'Позволяет получить максимально однородную консистенцию с минимальными усилиями', correct: false}
+        ]
+    },
+    {
+        question: "Какие наиболее актуальные вариации декорирования блюд из птицы бывают?" ,
+        answers:[
+            {text: 'Элементы из заварного теста и элементы из фруктов', correct: false},
+            {text: 'Элементы из тулипного теста и овощей', correct: false},
+            {text: 'Элементы из заварного или тулипного теста', correct: false},
+            {text: 'Элементы из заварного или тулипного теста, элементы из овощей и фруктов', correct: true}
+        ]
+    },
+    {
+        question: "Какую важную роль играет жир при жарке?" ,
+        answers:[
+            {text: 'Он обеспечивает равномерный прогрев. Улучшает вкус блюда и понижает его калорийность', correct: false},
+            {text: 'Он предохраняет продукт от пригорания и понижает его калорийность', correct: false},
+            {text: 'Он предохраняет продукт от пригорания, обеспечивает равномерный прогрев. Улучшает вкус блюда и повышает его калорийность', correct: true}
+        ]
+    },
 ]
 
 const questionElement =  document.querySelector("#question_name");
@@ -65,7 +106,7 @@ function showQuestion(){
 
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + "." + currentQuestion.question;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
